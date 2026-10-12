@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirPro A/C Solutions | Air Conditioning Installation, Servicing & Repairs in Mauritius</title>
+    <meta name="description" content="Professional air-conditioning installation, maintenance, troubleshooting, and repairs in Pailles, Port Louis, Mauritius. Contact AirPro A/C Solutions today.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#0284c7',
+                            600: '#026aa7',
+                            700: '#035388',
+                            900: '#0b3558',
+                        },
+                        ice: {
+                            50: '#f4fbfc',
+                            100: '#e6f6f8',
+                            500: '#06b6d4',
+                            600: '#0891b2',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Custom scrollbar and glassmorphism styling */
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1e293b;
+            background-color: #ffffff;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(3, 83, 136, 0.92) 0%, rgba(2, 132, 199, 0.85) 100%), url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-up.appear {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-primary-500 selection:text-white">
+
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-primary-700 to-primary-500 flex items-center justify-center text-white shadow-md shadow-primary-500/20 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-snowflake text-2xl animate-spin-slow"></i>
+                </div>
+                <div>
+                    <span class="text-xl sm:text-2xl font-bold tracking-tight text-slate-900 block leading-tight">AirPro <span class="text-primary-600">A/C Solutions</span></span>
+                    <span class="text-xs text-slate-500 font-medium tracking-wide">Pailles, Port Louis, Mauritius</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center space-x-8">
+                <a href="#home" class="font-medium text-slate-700 hover:text-primary-600 transition-colors">Home</a>
+                <a href="#about" class="font-medium text-slate-700 hover:text-primary-600 transition-colors">About</a>
+                <a href="#services" class="font-medium text-slate-700 hover:text-primary-600 transition-colors">Services</a>
+                <a href="#why-us" class="font-medium text-slate-700 hover:text-primary-600 transition-colors">Why Choose Us</a>
+                <a href="#testimonials" class="font-medium text-slate-700 hover:text-primary-600 transition-colors">Testimonials</a>
+                <a href="#contact" class="font-medium text-slate-700 hover:text-primary-600 transition-colors">Contact</a>
+            </nav>
+
+            <!-- Action Buttons -->
+            <div class="hidden md:flex items-center space-x-3">
+                <a href="https://wa.me/23052552541?text=Hello%20AirPro%20A%2FC%20Solutions,%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 py-2.5 rounded-xl border border-emerald-500 text-emerald-600 bg-emerald-50 hover:bg-emerald-100 font-semibold text-sm transition-all shadow-sm">
+                    <i class="fa-brands fa-whatsapp text-lg mr-2"></i> WhatsApp
+                </a>
+                <a href="tel:+23052552541" class="inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-primary-600 text-white hover:bg-primary-700 font-semibold text-sm transition-all shadow-md shadow-primary-600/20">
+                    <i class="fa-solid fa-phone text-sm mr-2"></i> Call Now
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" aria-label="Toggle Navigation Menu" class="lg:hidden p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-100 px-6 py-6 space-y-4 shadow-xl">
+            <nav class="flex flex-col space-y-3">
+                <a href="#home" class="mobile-link font-medium text-slate-700 hover:text-primary-600 py-2 border-b border-slate-50">Home</a>
+                <a href="#about" class="mobile-link font-medium text-slate-700 hover:text-primary-600 py-2 border-b border-slate-50">About</a>
+                <a href="#services" class="mobile-link font-medium text-slate-700 hover:text-primary-600 py-2 border-b border-slate-50">Services</a>
+                <a href="#why-us" class="mobile-link font-medium text-slate-700 hover:text-primary-600 py-2 border-b border-slate-50">Why Choose Us</a>
+                <a href="#testimonials" class="mobile-link font-medium text-slate-700 hover:text-primary-600 py-2 border-b border-slate-50">Testimonials</a>
+                <a href="#contact" class="mobile-link font-medium text-slate-700 hover:text-primary-600 py-2">Contact</a>
+            </nav>
+            <div class="pt-4 flex flex-col sm:flex-row gap-3">
+                <a href="https://wa.me/23052552541" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center px-4 py-3 rounded-xl border border-emerald-500 text-emerald-600 bg-emerald-50 font-semibold text-sm">
+                    <i class="fa-brands fa-whatsapp text-lg mr-2"></i> WhatsApp Us
+                </a>
+                <a href="tel:+23052552541" class="flex items-center justify-center px-4 py-3 rounded-xl bg-primary-600 text-white font-semibold text-sm">
+                    <i class="fa-solid fa-phone text-sm mr-2"></i> Call Now (+230 5255 2541)
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="relative pt-32 pb-20 md:pt-44 md:pb-32 hero-bg text-white overflow-hidden">
+        <!-- Decorative shapes -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-xs sm:text-sm font-semibold tracking-wide border border-white/20">
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <span>Expert A/C Services in Pailles & Port Louis, Mauritius</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Stay Cool. Breathe Better. <br class="hidden sm:inline"><span class="text-ice-500">We’ve Got Your AC Covered.</span>
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-slate-100 max-w-2xl font-light leading-relaxed mx-auto lg:mx-0">
+                        Professional air-conditioning installation, servicing, and repairs to keep your home and business comfortable all year round. Dependable workmanship you can trust.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="tel:+23052552541" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-xl bg-white text-primary-700 hover:bg-slate-100 font-bold text-base transition-all shadow-lg transform hover:-translate-y-0.5">
+                            <i class="fa-solid fa-phone-volume text-primary-600 mr-3 text-lg"></i> Call for AC Service
+                        </a>
+                        <a href="https://wa.me/23052552541?text=Hello%20AirPro%20A%2FC%20Solutions,%20I%20would%20like%20to%20request%20an%20AC%20service." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-base transition-all shadow-lg shadow-emerald-500/20 transform hover:-translate-y-0.5">
+                            <i class="fa-brands fa-whatsapp mr-3 text-xl"></i> WhatsApp Us
+                        </a>
+                        <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 rounded-xl bg-primary-900/60 hover:bg-primary-900 text-white font-semibold text-base transition-all border border-white/20">
+                            Request a Service <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                    </div>
+
+                    <!-- Compact Highlights -->
+                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-white/15 max-w-xl mx-auto lg:mx-0">
+                        <div class="flex items-center space-x-3 text-left">
+                            <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-ice-500 flex-shrink-0">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-sm">AC Installation</h3>
+                                <p class="text-xs text-slate-300">Residential & Commercial</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3 text-left">
+                            <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-ice-500 flex-shrink-0">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-sm">Expert Servicing</h3>
+                                <p class="text-xs text-slate-300">Routine Maintenance</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3 text-left">
+                            <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-ice-500 flex-shrink-0">
+                                <i class="fa-solid fa-bolt-lightning"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-sm">Reliable Repairs</h3>
+                                <p class="text-xs text-slate-300">Troubleshooting & Fixes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image Card -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-2 bg-gradient-to-r from-ice-500 to-primary-500 rounded-3xl blur-xl opacity-30"></div>
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20 bg-slate-800">
+                            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=800&auto=format&fit=crop" alt="Professional HVAC technician servicing an air conditioner" class="w-full h-[420px] object-cover hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/600x500/0284c7/ffffff?text=AirPro+A%2FC+Technician'">
+                            
+                            <!-- Floating Badge -->
+                            <div class="absolute bottom-6 left-6 right-6 glass-card p-4 rounded-xl text-slate-900 shadow-xl flex items-center space-x-4">
+                                <div class="w-12 h-12 rounded-xl bg-primary-600 text-white flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-snowflake text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm">Professional Mauritian A/C Experts</h4>
+                                    <p class="text-xs text-slate-600">Based in Pailles, Port Louis, Mauritius</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 md:py-32 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- About Images -->
+                <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=600&auto=format&fit=crop" alt="Air conditioner maintenance work" class="rounded-2xl shadow-lg object-cover h-64 w-full" onerror="this.src='https://placehold.co/400x300/e0effe/0284c7?text=Maintenance'">
+                        <div class="bg-primary-700 text-white p-6 rounded-2xl shadow-lg flex flex-col justify-center">
+                            <span class="text-3xl font-extrabold text-ice-400 mb-1">Mauritius</span>
+                            <span class="text-sm font-medium text-slate-100">Local Service in Pailles & Surrounds</span>
+                        </div>
+                    </div>
+                    <div class="space-y-4 pt-8">
+                        <div class="bg-white p-6 rounded-2xl shadow-lg border border-slate-100">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center mb-3">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                            </div>
+                            <h4 class="font-bold text-slate-900 mb-1">Quality Guaranteed</h4>
+                            <p class="text-xs text-slate-600">Dedicated to clean, efficient cooling performance for your property.</p>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1542013936-69f0eed2bfa1?q=80&w=600&auto=format&fit=crop" alt="Technician inspecting air conditioning unit" class="rounded-2xl shadow-lg object-cover h-64 w-full" onerror="this.src='https://placehold.co/400x300/e0effe/0284c7?text=Inspection'">
+                    </div>
+                </div>
+
+                <!-- About Content -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-primary-100 text-primary-700 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider">
+                        <i class="fa-solid fa-house-chimney-medical"></i>
+                        <span>About AirPro A/C Solutions</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                        Your Trusted Partner for Indoor Comfort in Mauritius
+                    </h2>
+
+                    <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+                        Based in Pailles, Port Louis, Mauritius, <strong>AirPro A/C Solutions</strong> is dedicated to delivering professional air-conditioning installation, troubleshooting, routine servicing, and repair services for both residential and commercial clients.
+                    </p>
+
+                    <p class="text-slate-600 text-base leading-relaxed">
+                        We prioritize professional workmanship, transparent communication, and reliable service to ensure your cooling systems operate smoothly through every season. Whether you need a brand-new installation or prompt repairs for a malfunctioning unit, our skilled team is here to help.
+                    </p>
+
+                    <!-- Key Bullet Points -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <span class="text-sm font-medium text-slate-700">Skilled Technical Workmanship</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <span class="text-sm font-medium text-slate-700">Residential & Commercial AC</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <span class="text-sm font-medium text-slate-700">Convenient Phone & WhatsApp Support</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <span class="text-sm font-medium text-slate-700">Prompt & Dependable Scheduling</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <a href="#contact" class="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-primary-600 text-white hover:bg-primary-700 font-bold text-sm transition-all shadow-md shadow-primary-600/20">
+                            Contact Our Team <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <div class="inline-flex items-center space-x-2 bg-primary-100 text-primary-700 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider">
+                    <i class="fa-solid fa-gears"></i>
+                    <span>What We Offer</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Professional Air Conditioning Services
+                </h2>
+                <p class="text-slate-600 text-base sm:text-lg">
+                    Comprehensive cooling solutions tailored for homes and businesses across Mauritius.
+                </p>
+            </div>
+
+            <!-- Service Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=600&auto=format&fit=crop" alt="AC Installation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/400x250/0284c7/ffffff?text=AC+Installation'">
+                        <div class="absolute top-4 right-4 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-md flex items-center justify-center text-primary-600 shadow-md">
+                            <i class="fa-solid fa-snowflake"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">AC Installation</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Professional, secure installation for split and multi-split systems in homes, offices, and commercial spaces.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/23052552541?text=Hello%20AirPro%20A%2FC%20Solutions,%20I%20would%20like%20to%20request%20AC%20Installation%20service." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full py-3 px-4 rounded-xl bg-primary-50 text-primary-700 hover:bg-primary-600 hover:text-white font-semibold text-sm transition-colors border border-primary-100">
+                            <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Request Service
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 2: AC Servicing & Cleaning with explicit dedicated image -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+                    <div class="h-48 overflow-hidden relative bg-slate-200">
+                        <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?q=80&w=600&auto=format&fit=crop" alt="AC Servicing & Cleaning" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/400x250/0284c7/ffffff?text=AC+Servicing+%26+Cleaning'">
+                        <div class="absolute top-4 right-4 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-md flex items-center justify-center text-primary-600 shadow-md">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">AC Servicing & Cleaning</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Routine cleaning and maintenance to help maintain cooling performance, improve air quality, and save energy.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/23052552541?text=Hello%20AirPro%20A%2FC%20Solutions,%20I%20would%20like%20to%20request%20AC%20Servicing%20and%20Cleaning." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full py-3 px-4 rounded-xl bg-primary-50 text-primary-700 hover:bg-primary-600 hover:text-white font-semibold text-sm transition-colors border border-primary-100">
+                            <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Request Service
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?q=80&w=600&auto=format&fit=crop" alt="AC Repairs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/400x250/0284c7/ffffff?text=AC+Repairs'">
+                        <div class="absolute top-4 right-4 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-md flex items-center justify-center text-primary-600 shadow-md">
+                            <i class="fa-solid fa-wrench"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">AC Repairs</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Expert troubleshooting and repair for cooling failures, strange noises, leaks, and electrical malfunctions.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/23052552541?text=Hello%20AirPro%20A%2FC%20Solutions,%20I%20would%20like%20to%20request%20AC%20Repairs." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full py-3 px-4 rounded-xl bg-primary-50 text-primary-700 hover:bg-primary-600 hover:text-white font-semibold text-sm transition-colors border border-primary-100">
+                            <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Request Service
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=600&auto=format&fit=crop" alt="Preventive Maintenance" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/400x250/0284c7/ffffff?text=Preventive+Maintenance'">
+                        <div class="absolute top-4 right-4 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-md flex items-center justify-center text-primary-600 shadow-md">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Preventive Maintenance</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Scheduled checks and tune-ups designed to keep systems running efficiently and extend unit lifespan.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/23052552541?text=Hello%20AirPro%20A%2FC%20Solutions,%20I%20would%20like%20to%20request%20Preventive%20Maintenance." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full py-3 px-4 rounded-xl bg-primary-50 text-primary-700 hover:bg-primary-600 hover:text-white font-semibold text-sm transition-colors border border-primary-100">
+                            <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Request Service
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop" alt="AC System Inspection" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/400x250/0284c7/ffffff?text=AC+Inspection'">
+                        <div class="absolute top-4 right-4 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-md flex items-center justify-center text-primary-600 shadow-md">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">AC System Inspection</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Thorough diagnostic assessments to identify potential issues and recommend suitable, cost-effective solutions.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/23052552541?text=Hello%20AirPro%20A%2FC%20Solutions,%20I%20would%20like%20to%20request%20an%20AC%20System%20Inspection." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full py-3 px-4 rounded-xl bg-primary-50 text-primary-700 hover:bg-primary-600 hover:text-white font-semibold text-sm transition-colors border border-primary-100">
+                            <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Request Service
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=600&auto=format&fit=crop" alt="Residential & Commercial AC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/400x250/0284c7/ffffff?text=Residential+%26+Commercial'">
+                        <div class="absolute top-4 right-4 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-md flex items-center justify-center text-primary-600 shadow-md">
+                            <i class="fa-solid fa-building-user"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Residential & Commercial AC</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Customized cooling solutions designed specifically for different property types, room sizes, and business setups.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/23052552541?text=Hello%20AirPro%20A%2FC%20Solutions,%20I%20would%20like%20to%20inquire%20about%20Residential%20and%20Commercial%20AC%20Solutions." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full py-3 px-4 rounded-xl bg-primary-50 text-primary-700 hover:bg-primary-600 hover:text-white font-semibold text-sm transition-colors border border-primary-100">
+                            <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Request Service
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="py-20 md:py-32 bg-slate-50 border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <div class="inline-flex items-center space-x-2 bg-primary-100 text-primary-700 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider">
+                    <i class="fa-solid fa-star"></i>
+                    <span>The AirPro Advantage</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Why Choose AirPro A/C Solutions?
+                </h2>
+                <p class="text-slate-600 text-base sm:text-lg">
+                    Dedicated to dependable cooling service and customer satisfaction across Mauritius.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 rounded-2xl bg-primary-50 text-primary-600 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-medal"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Professional Workmanship</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Meticulous attention to detail on every installation, maintenance visit, and repair job to ensure lasting results.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 rounded-2xl bg-primary-50 text-primary-600 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Installation, Servicing & Repairs</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        A complete range of A/C services handled by knowledgeable technicians under one roof.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 rounded-2xl bg-primary-50 text-primary-600 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Convenient Phone & WhatsApp</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Quick, responsive communication channels so you can easily discuss your AC needs or schedule an appointment.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 rounded-2xl bg-primary-50 text-primary-600 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Customer-Focused Service</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Honest advice, transparent recommendations, and respectful service designed around your comfort and schedule.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow md:col-span-2 lg:col-span-2">
+                    <div class="w-14 h-14 rounded-2xl bg-primary-50 text-primary-600 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Service in Mauritius</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Based in Pailles, Port Louis, we proudly support homes and businesses across the island with prompt response times and reliable on-site support.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <div class="inline-flex items-center space-x-2 bg-primary-100 text-primary-700 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider">
+                    <i class="fa-solid fa-list-check"></i>
+                    <span>Simple 3-Step Process</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    How It Works
+                </h2>
+                <p class="text-slate-600 text-base sm:text-lg">
+                    Getting your air conditioner serviced or installed is quick and hassle-free.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+                <!-- Step 1 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 text-center relative group hover:bg-primary-50/50 transition-colors">
+                    <div class="w-16 h-16 rounded-2xl bg-primary-600 text-white font-extrabold text-2xl flex items-center justify-center mx-auto mb-6 shadow-md shadow-primary-600/20">
+                        1
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Contact Us</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Reach out via phone, WhatsApp, or our online booking form to let us know what AC service you need.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 text-center relative group hover:bg-primary-50/50 transition-colors">
+                    <div class="w-16 h-16 rounded-2xl bg-primary-600 text-white font-extrabold text-2xl flex items-center justify-center mx-auto mb-6 shadow-md shadow-primary-600/20">
+                        2
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Discuss Your AC Problem</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Talk directly with our team about your cooling requirements, property type, or specific AC issues.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 text-center relative group hover:bg-primary-50/50 transition-colors">
+                    <div class="w-16 h-16 rounded-2xl bg-primary-600 text-white font-extrabold text-2xl flex items-center justify-center mx-auto mb-6 shadow-md shadow-primary-600/20">
+                        3
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Arrange Your Service</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Confirm a convenient appointment date and time for our technicians to visit your location.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-20 md:py-32 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <div class="inline-flex items-center space-x-2 bg-white/10 text-ice-400 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider border border-white/10">
+                    <i class="fa-solid fa-comments"></i>
+                    <span>Customer Feedback</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+                    What Our Customers Say
+                </h2>
+                <p class="text-slate-400 text-base sm:text-lg">
+                    Placeholder testimonials representing our commitment to professional service. Genuine customer reviews will appear here.
+                </p>
+            </div>
+
+            <!-- Testimonial Carousel Container -->
+            <div class="max-w-4xl mx-auto relative">
+                <div id="testimonial-carousel" class="overflow-hidden">
+                    <div class="flex transition-transform duration-500 ease-out" id="testimonial-track">
+                        <!-- Slide 1 -->
+                        <div class="w-full flex-shrink-0 px-4">
+                            <div class="bg-slate-800 border border-slate-700/60 p-8 md:p-12 rounded-3xl shadow-2xl relative">
+                                <div class="text-ice-500 text-4xl mb-6"><i class="fa-solid fa-quote-left"></i></div>
+                                <p class="text-lg md:text-xl text-slate-200 italic mb-8 leading-relaxed">
+                                    "AirPro A/C Solutions handled our home AC installation with utmost professionalism. Clean workmanship and very polite technicians. Highly recommended!"
+                                </p>
+                                <div class="flex items-center justify-between border-t border-slate-700 pt-6">
+                                    <div>
+                                        <h4 class="font-bold text-white text-base">[Customer Name Placeholder]</h4>
+                                        <p class="text-xs text-slate-400">Residential Client, Mauritius</p>
+                                    </div>
+                                    <div class="flex text-amber-400 space-x-1 text-sm">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="w-full flex-shrink-0 px-4">
+                            <div class="bg-slate-800 border border-slate-700/60 p-8 md:p-12 rounded-3xl shadow-2xl relative">
+                                <div class="text-ice-500 text-4xl mb-6"><i class="fa-solid fa-quote-left"></i></div>
+                                <p class="text-lg md:text-xl text-slate-200 italic mb-8 leading-relaxed">
+                                    "Prompt response when our office air conditioner stopped cooling. They diagnosed the issue quickly and completed the repair smoothly."
+                                </p>
+                                <div class="flex items-center justify-between border-t border-slate-700 pt-6">
+                                    <div>
+                                        <h4 class="font-bold text-white text-base">[Business Client Placeholder]</h4>
+                                        <p class="text-xs text-slate-400">Commercial Client, Port Louis</p>
+                                    </div>
+                                    <div class="flex text-amber-400 space-x-1 text-sm">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="w-full flex-shrink-0 px-4">
+                            <div class="bg-slate-800 border border-slate-700/60 p-8 md:p-12 rounded-3xl shadow-2xl relative">
+                                <div class="text-ice-500 text-4xl mb-6"><i class="fa-solid fa-quote-left"></i></div>
+                                <p class="text-lg md:text-xl text-slate-200 italic mb-8 leading-relaxed">
+                                    "Very thorough routine servicing. Our units are running much quieter and more efficiently now. Great customer service over WhatsApp."
+                                </p>
+                                <div class="flex items-center justify-between border-t border-slate-700 pt-6">
+                                    <div>
+                                        <h4 class="font-bold text-white text-base">[Homeowner Placeholder]</h4>
+                                        <p class="text-xs text-slate-400">Pailles, Mauritius</p>
+                                    </div>
+                                    <div class="flex text-amber-400 space-x-1 text-sm">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <div class="flex items-center justify-center space-x-4 mt-8">
+                    <button id="prev-testimonial" aria-label="Previous Testimonial" class="w-12 h-12 rounded-full bg-slate-800 hover:bg-primary-600 text-white flex items-center justify-center transition-colors border border-slate-700">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="flex space-x-2" id="testimonial-dots">
+                        <button class="w-3 h-3 rounded-full bg-primary-500 transition-colors" data-index="0" aria-label="Slide 1"></button>
+                        <button class="w-3 h-3 rounded-full bg-slate-600 transition-colors" data-index="1" aria-label="Slide 2"></button>
+                        <button class="w-3 h-3 rounded-full bg-slate-600 transition-colors" data-index="2" aria-label="Slide 3"></button>
+                    </div>
+                    <button id="next-testimonial" aria-label="Next Testimonial" class="w-12 h-12 rounded-full bg-slate-800 hover:bg-primary-600 text-white flex items-center justify-center transition-colors border border-slate-700">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 md:py-32 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Contact Information & Map -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div class="space-y-4">
+                        <div class="inline-flex items-center space-x-2 bg-primary-100 text-primary-700 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider">
+                            <i class="fa-solid fa-address-book"></i>
+                            <span>Get In Touch</span>
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                            Contact AirPro A/C Solutions
+                        </h2>
+                        <p class="text-slate-600 text-base leading-relaxed">
+                            Ready to schedule your service or need assistance with your air conditioning? Reach out to us directly or send a booking request on WhatsApp.
+                        </p>
+                    </div>
+
+                    <!-- Contact Details Cards -->
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4 p-4 rounded-2xl bg-white border border-slate-100 shadow-sm">
+                            <div class="w-12 h-12 rounded-xl bg-primary-50 text-primary-600 flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Location</h4>
+                                <p class="text-slate-600 text-sm">Pailles, Port Louis, Mauritius, 11215</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-4 rounded-2xl bg-white border border-slate-100 shadow-sm">
+                            <div class="w-12 h-12 rounded-xl bg-primary-50 text-primary-600 flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Phone / WhatsApp</h4>
+                                <a href="tel:+23052552541" class="text-primary-600 font-semibold text-sm hover:underline">+230 5255 2541</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-4 rounded-2xl bg-white border border-slate-100 shadow-sm">
+                            <div class="w-12 h-12 rounded-xl bg-primary-50 text-primary-600 flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Email Address</h4>
+                                <a href="mailto:sumodheeally@hotmail.com" class="text-primary-600 font-semibold text-sm hover:underline">sumodheeally@hotmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Embed / Container -->
+                    <div class="rounded-2xl overflow-hidden shadow-lg border border-slate-200 h-64">
+                        <iframe title="Pailles Mauritius Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14902.937209734185!2d57.4800!3d-20.2000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c5b3675e2f7bb%3A0x6b490d16568db3ad!2sPailles%2C%20Mauritius!5e0!3m2!1sen!2smu!4v1650000000000!5m2!1sen!2smu" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <!-- Interactive Booking & Service Request Form -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white p-8 sm:p-10 rounded-3xl shadow-xl border border-slate-100 relative">
+                        <div class="mb-8">
+                            <h3 class="text-2xl font-bold text-slate-900 mb-2">Book Your AC Service</h3>
+                            <p class="text-slate-600 text-sm">
+                                Fill out the details below. Clicking Paired Button will prepare and send your request instantly on WhatsApp.
+                            </p>
+                        </div>
+
+                        <form id="booking-form" class="space-y-6" onsubmit="event.preventDefault(); submitBookingForm();">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <!-- Service Selection -->
+                                <div class="space-y-2">
+                                    <label for="service-select" class="block text-sm font-semibold text-slate-700">Select Service <span class="text-red-500">*</span></label>
+                                    <select id="service-select" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary-500 bg-slate-50 text-slate-800 text-sm">
+                                        <option value="" disabled selected>Choose a service...</option>
+                                        <option value="AC Installation">AC Installation</option>
+                                        <option value="AC Servicing & Cleaning">AC Servicing & Cleaning</option>
+                                        <option value="AC Repairs">AC Repairs</option>
+                                        <option value="Preventive Maintenance">Preventive Maintenance</option>
+                                        <option value="AC System Inspection">AC System Inspection</option>
+                                        <option value="Residential & Commercial AC">Residential & Commercial AC</option>
+                                    </select>
+                                </div>
+
+                                <!-- Customer Name -->
+                                <div class="space-y-2">
+                                    <label for="customer-name" class="block text-sm font-semibold text-slate-700">Your Full Name <span class="text-red-500">*</span></label>
+                                    <input type="text" id="customer-name" required placeholder="Enter your name" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary-500 bg-slate-50 text-slate-800 text-sm">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <!-- Phone Number -->
+                                <div class="space-y-2">
+                                    <label for="customer-phone" class="block text-sm font-semibold text-slate-700">Phone / WhatsApp Number <span class="text-red-500">*</span></label>
+                                    <input type="tel" id="customer-phone" required placeholder="e.g. +230 5255 2541" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary-500 bg-slate-50 text-slate-800 text-sm">
+                                </div>
+
+                                <!-- Preferred Date -->
+                                <div class="space-y-2">
+                                    <label for="preferred-date" class="block text-sm font-semibold text-slate-700">Preferred Date <span class="text-red-500">*</span></label>
+                                    <input type="date" id="preferred-date" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary-500 bg-slate-50 text-slate-800 text-sm">
+                                </div>
+                            </div>
+
+                            <!-- Optional Description -->
+                            <div class="space-y-2">
+                                <label for="issue-description" class="block text-sm font-semibold text-slate-700">AC Issue / Additional Details (Optional)</label>
+                                <textarea id="issue-description" rows="4" placeholder="Describe the problem, number of units, or specific location details..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary-500 bg-slate-50 text-slate-800 text-sm"></textarea>
+                            </div>
+
+                            <!-- Notice -->
+                            <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 text-xs text-amber-800 flex items-start space-x-3">
+                                <i class="fa-solid fa-circle-info text-amber-600 text-sm mt-0.5 flex-shrink-0"></i>
+                                <p>Please note: Service requests are not confirmed until our team responds to verify schedule and availability.</p>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="w-full py-4 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-base transition-all shadow-lg shadow-emerald-500/20 flex items-center justify-center space-x-3">
+                                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                                <span>Send Booking Request on WhatsApp</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-400 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Col 1 -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-xl bg-primary-600 text-white flex items-center justify-center shadow-md">
+                            <i class="fa-solid fa-snowflake"></i>
+                        </div>
+                        <span class="text-xl font-bold text-white">AirPro <span class="text-primary-500">A/C Solutions</span></span>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Professional air-conditioning installation, servicing, and repairs based in Pailles, Port Louis, Mauritius. Keeping your indoor spaces comfortable.
+                    </p>
+                    <div class="flex space-x-3 pt-2">
+                        <a href="https://wa.me/23052552541" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-emerald-600 text-white flex items-center justify-center transition-colors">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="tel:+23052552541" aria-label="Phone" class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-primary-600 text-white flex items-center justify-center transition-colors">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                        <a href="mailto:sumodheeally@hotmail.com" aria-label="Email" class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-primary-600 text-white flex items-center justify-center transition-colors">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold text-base mb-4">Quick Links</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#why-us" class="hover:text-white transition-colors">Why Choose Us</a></li>
+                        <li><a href="#testimonials" class="hover:text-white transition-colors">Testimonials</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Services -->
+                <div>
+                    <h4 class="text-white font-bold text-base mb-4">Our Services</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#services" class="hover:text-white transition-colors">AC Installation</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">AC Servicing & Cleaning</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">AC Repairs</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Preventive Maintenance</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">AC System Inspection</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Residential & Commercial</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact Details -->
+                <div>
+                    <h4 class="text-white font-bold text-base mb-4">Contact Info</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start space-x-3">
+                            <i class="fa-solid fa-location-dot text-primary-500 mt-1"></i>
+                            <span>Pailles, Port Louis, Mauritius, 11215</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-phone text-primary-500"></i>
+                            <a href="tel:+23052552541" class="hover:text-white transition-colors">+230 5255 2541</a>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-envelope text-primary-500"></i>
+                            <a href="mailto:sumodheeally@hotmail.com" class="hover:text-white transition-colors">sumodheeally@hotmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-900 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+                <p>&copy; 2026 AirPro A/C Solutions. All rights reserved.</p>
+                <p class="mt-2 sm:mt-0">Pailles, Port Louis, Mauritius</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Testimonial Carousel Logic
+        let currentSlide = 0;
+        const track = document.getElementById('testimonial-track');
+        const slides = track ? track.children : [];
+        const totalSlides = slides.length;
+        const dots = document.querySelectorAll('#testimonial-dots button');
+
+        function updateCarousel(index) {
+            if (!track) return;
+            if (index < 0) {
+                currentSlide = totalSlides - 1;
+            } else if (index >= totalSlides) {
+                currentSlide = 0;
+            } else {
+                currentSlide = index;
+            }
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+            dots.forEach((dot, idx) => {
+                if (idx === currentSlide) {
+                    dot.classList.remove('bg-slate-600');
+                    dot.classList.add('bg-primary-500');
+                } else {
+                    dot.classList.remove('bg-primary-500');
+                    dot.classList.add('bg-slate-600');
+                }
+            });
+        }
+
+        const prevBtn = document.getElementById('prev-testimonial');
+        const nextBtn = document.getElementById('next-testimonial');
+
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                updateCarousel(currentSlide - 1);
+            });
+        }
+
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                updateCarousel(currentSlide + 1);
+            });
+        }
+
+        dots.forEach((dot, idx) => {
+            dot.addEventListener('click', () => {
+                updateCarousel(idx);
+            });
+        });
+
+        // Auto advance carousel every 6 seconds
+        setInterval(() => {
+            updateCarousel(currentSlide + 1);
+        }, 6000);
+
+        // Booking Form WhatsApp submission handler
+        function submitBookingForm() {
+            const service = document.getElementById('service-select').value;
+            const name = document.getElementById('customer-name').value;
+            const phone = document.getElementById('customer-phone').value;
+            const date = document.getElementById('preferred-date').value;
+            const description = document.getElementById('issue-description').value;
+
+            if (!service || !name || !phone || !date) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            const message = `Hello AirPro A/C Solutions,%0A%0AI would like to book a service:%0A- Service: ${encodeURIComponent(service)}%0A- Name: ${encodeURIComponent(name)}%0A- Phone: ${encodeURIComponent(phone)}%0A- Preferred Date: ${encodeURIComponent(date)}%0A- Details: ${encodeURIComponent(description || 'N/A')}`;
+
+            const whatsappUrl = `https://wa.me/23052552541?text=${message}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Navbar shadow effect on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 20) {
+                navbar.classList.add('shadow-md');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body>
+</html>
